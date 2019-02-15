@@ -1,5 +1,6 @@
 <template>
   <div class="home">
+    <Content custom/>
     <button class="action-button">
         <NavLink 
         style="color:#fff"
@@ -8,7 +9,6 @@
             text: data.actionText
         }" />
     </button>
-    <Content custom/>
   </div>
 </template>
 

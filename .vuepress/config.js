@@ -19,7 +19,7 @@ module.exports = {
         docsBranch: 'master',
         editLinks: true,
         logo: 'https://www.dartlang.org/assets/shared/dart/logo+text/horizontal/default-363c9c133ffb7780463d3d638632b64cc8221d74d93cd1002fb1efbbe9983bc9.svg',
-        sidebarDepth: 2,
+        sidebarDepth: 1,
         locales: {
             '/': {
                 selectText: 'Languages',
@@ -38,6 +38,25 @@ module.exports = {
                     { text: 'API', link: '/api/'}
                 ],
                 sidebar: {
+                    '/guide/': [
+                        {
+                            title: 'GUIDE',
+                            collapsable: false,
+                            children: [
+                                ['/guide/','Guide'],
+                                '/guide/install',
+                                '/guide/tools'
+                            ]
+                        },
+                        {
+                            title: 'Pub',
+                            collapsable: false,
+                            children: [
+                                '/guide/pub/',
+                                '/guide/pub/cmd/'
+                            ]
+                        }
+                    ],
                     '/api/': [
                         {
                             title: 'CORE',
@@ -169,7 +188,10 @@ module.exports = {
                             title: '学习指南',
                             collapsable: false,
                             children: [
-                                ['/zh/guide/','快速上手'],
+                                ['/zh/guide/','指南'],
+                                ['/zh/guide/install','安装SDK'],
+                                ['/zh/guide/tools','开发工具'],
+                                ['/zh/guide/pub/', '使用Pub']
                             ]
                         }
                     ],
@@ -281,6 +303,12 @@ module.exports = {
                     }
                 ]
             }
+        }
+    },
+    markdown: {
+        config: md => {
+            md.use(require('markdown-it-mark'))
+            md.use(require('markdown-it-include'))
         }
     }
 }

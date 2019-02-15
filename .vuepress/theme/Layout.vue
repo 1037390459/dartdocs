@@ -53,7 +53,7 @@
     </Page>
     
     <div class="page-footer">
-        <div class="container">
+        <div class="container page">
             <div class="item">
                 <img style="width:120px" src="http://www.dartdoc.cn/assets/shared/dart/logo+text/horizontal/mono-004b4974b3112e2d9136b1c457037dfd9fe54e2e69e850d777891e5c2a57a78d.svg" />
             </div>
