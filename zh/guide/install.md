@@ -14,7 +14,7 @@
 
 使用[Chocolatey](https://chocolatey.org/)安装Dart SDK 的稳定版本
 
-:::warning
+:::warning 注意
 要使用Chocolatey安装必须先安装Chocolatey命令行工具
 - [Chocolatey官网](https://chocolatey.org/)
 - [Chocolatey安装教程](https://chocolatey.org/install)
@@ -100,7 +100,7 @@ $ echo 'export PATH="$PATH:/usr/lib/dart/bin"' >> ~/.profile
 ```
 
 ## Mac安装步骤
-:::warning
+:::warning 注意
 使用Mac须要使用[homebrew](http://brew.sh/)命令行工具安装 dart sdk，你需要先安装[homebrew](http://brew.sh/)
 :::
 安装[homebrew](http://brew.sh/),然后运行：

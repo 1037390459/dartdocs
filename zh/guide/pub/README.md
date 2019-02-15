@@ -2,13 +2,13 @@
 
 您可以使用pub工具来管理dart包。pub是安装dart SDK 后的内置命令行工具。类似于 [npm](https://www.npmjs.com/) 或[yarn](https://yarnpkg.com/)
 
-:::warning
+:::warning 注意
 flutter SDK有自己的命令来管理和更新软件包。有关更多信息，请参阅[Flutter](https://flutter.io/docs/development/packages-and-plugins/using-packages)网站上的使用包。
 :::
 
 您可以通过IDE（例如WebStorm）或命令行访问pub命令。 使用最方便的方法。
 
-:::tip
+:::tip 提示
 遇到问题？ 请参阅[故障排除](./troubleshoot.md)。
 :::
 
@@ -16,7 +16,7 @@ flutter SDK有自己的命令来管理和更新软件包。有关更多信息，
 ## 管理包
 
 Dart应用程序依赖于包。 如果您的Dart应用程序使用一个或多个库包，那么您的应用程序本身必须是应用程序包。
-:::tip
+:::tip 提示
 Pub用于通过pub build和pub serve等命令支持构建应用程序。 该功能现在在其他工具中，例如构建系统。 有关详细信息，请参阅[Obsolete Pub Features](./obsolete.md).
 :::
 

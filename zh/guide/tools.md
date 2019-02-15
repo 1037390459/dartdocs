@@ -40,7 +40,7 @@ dart 支持以下IDE：
 2. 设置dart sdk的path
 3. 选项开发模板
 
-:::warning
+:::warning 注意
 Webstorm 必须添加dart sdk的安装目录，如果不添加就无法创建项目
 :::
 
