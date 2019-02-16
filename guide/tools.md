@@ -43,7 +43,7 @@ Manages Dart packages, making it easy for you to install, use, and share Dart li
 
 ### Static analyzer (dartanalyzer)
 Evaluates and reports any errors or warnings in your code. The Dart plugin for your IDE should make use of Dart’s analysis engine, but you can also run the analyzer from the command line.
-### 代码格式化工具 (dartfmt)
+### Code formatter (dartfmt)
 Formats your code, following the recommendations of the Dart Style Guide. IDEs that support Dart generally allow you to format the code within the IDE. Or you can run the formatter from the command line.
 
 ## Tools in packages

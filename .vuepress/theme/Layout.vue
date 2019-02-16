@@ -230,7 +230,7 @@ export default {
             width auto
             .item
                 padding 2rem
-                width 100%
+                width auto
 
 @media (max-width: $MQMobileNarrow)
     .page-footer
@@ -238,6 +238,6 @@ export default {
             width auto
             .item
                 padding 2rem
-                width 100%
+                width auto
 </style>
 

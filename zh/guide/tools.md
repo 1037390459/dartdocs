@@ -19,7 +19,7 @@ dart 支持以下IDE：
 
 ## DartPad
 
-[DartPad](https://dartpad.cn/) 无需下载，是学习 Dart 语法和体验 Dart 语言功能的 一个非常棒的途径。它支持 Dart 的核心库，但不包括 VM 库，例如 dart:io 。
+[DartPad](https://dartpad.cn/) 无需下载，是一个在线学习Dart 语法和体验 Dart 语言功能的在线工具，它只支持 Dart 的核心库，但不能使用 VM 库，例如 dart:io。
 
 ## vscode配置
 
@@ -43,26 +43,3 @@ dart 支持以下IDE：
 :::warning 注意
 Webstorm 必须添加dart sdk的安装目录，如果不添加就无法创建项目
 :::
-
-## SDK 中的工具
-大多数与 Dart 相关的 SDK 包括以下工具。
-
-### [Pub 包管理工具 (pub)](/zh/guide/pub/)
-
-通过管理 Dart 包，可以轻松的安装，使用和共享 Dart 库，命令行工具以及其他资源。 某些 Dart 技术（如 Flutter ）可能不支持所有 Pub 命令。支持 Dart 的 IDE 通常会支持 Pub，当然你也可以通过命令行使用它。
-
-### 静态分析工具 (dartanalyzer)
-预估并提示代码中的错误或警告。IDE 的 Dart 插件会使用 Dart 的分析工具， 当然你也可以从命令行执行分析工具。
-
-### 代码格式化工具 (dartfmt)
-按照 Dart 风格指导的建议格式化你的代码。 支持 Dart 的 IDE 通常允许你在 IDE 中格式化代码。或者可以在命令行执行格式化程序。
-
-
-## 包中的工具
-
-下列工具分布在 Dart 包站点上的包中。 根据每个工具的安装说明描述，使用 pub 命令安装这些工具。
-
-### build_runner
-代码生成器。
-### dartfix
-用于 Dart 源代码迁移和常见问题修复的工具。

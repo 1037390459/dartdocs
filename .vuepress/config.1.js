@@ -8,6 +8,11 @@ module.exports = {
             title: 'Dart programming language | Dart tutorial',
             description: 'Dart is a language optimized for client-side development for web and mobile.'
         },
+        "/zh/": {
+            lang: 'zh-CN',
+            title: 'DART编程语言 | Dart中文教程',
+            description: 'DART 中文教程学习网站'
+        }
     },
     themeConfig: {
         repo: 'ranyunlong/dartdocs',
@@ -17,6 +22,144 @@ module.exports = {
         sidebarDepth: 1,
         locales: {
             '/': {
+                selectText: 'Languages',
+                label: 'English',
+                editLinkText: 'Edit this page on GitHub',
+                serviceWorker: {
+                    updatePopup: {
+                      message: "New content is available.",
+                      buttonText: "Refresh"
+                    }
+                },
+                algolia: {},
+                nav: [
+                    { text: 'Home', link: '/' },
+                    { text: 'Guide', link: '/guide/' },
+                    { text: 'API', link: '/api/'}
+                ],
+                // lastUpdated: 'Last Updated',
+                sidebar: {
+                    '/guide/': [
+                        {
+                            title: 'GUIDE',
+                            collapsable: false,
+                            children: [
+                                ['/guide/','Guide'],
+                                '/guide/install',
+                                '/guide/tools'
+                            ]
+                        }
+                    ],
+                    '/api/': [
+                        {
+                            title: 'CORE',
+                            collapsable: false,
+                            children: [
+                                ['/api/core/async/','async'],
+                                ['/api/core/collection/', 'collection'],
+                                ['/api/core/convert/', 'convert'],
+                                ['/api/core/core/', 'core'],
+                                ['/api/core/developer/', 'developer'],
+                                ['/api/core/math/', 'math'],
+                                ['/api/core/typed_data/', 'typed_data'],
+                            ]
+                        },
+                        {
+                            title: 'WEB',
+                            collapsable: false,
+                            path: '/api/web/',
+                            children: [
+                                ['/api/web/html/','html'],
+                                ['/api/web/indexed_db/', 'indexed_db'],
+                                ['/api/web/js/', 'js'],
+                                ['/api/web/js_util/', 'js_util'],
+                                ['/api/web/svg/', 'svg'],
+                                ['/api/web/web_audio/', 'web_audio'],
+                                ['/api/web/web_gl/', 'web_gl'],
+                                ['/api/web/web_sql/', 'web_sql']
+                            ]
+                        },
+                        {
+                            title: 'VM',
+                            path: '/api/vm/',
+                            collapsable: false,
+                            children: [
+                                ['/api/vm/cli/','cli'],
+                                ['/api/vm/io/', 'io'],
+                                ['/api/vm/isolate/', 'isolate'],
+                                ['/api/vm/mirrors/', 'mirrors']
+                            ]
+                        }
+                    ]
+                },
+                footbar: [
+                    {
+                        label: 'TECHNOLOGIES',
+                        children: [
+                            {
+                                label: 'Mobile (Flutter)',
+                                link: ''
+                            },
+                            {
+                                label: 'Dart for the web'
+                            },
+                            {
+                                label: 'Server-side Dart'
+                            },
+                            {
+                                label: 'Observatory'
+                            },
+                            {
+                                label: 'Dart libraries'
+                            },
+                            {
+                                label: 'Dart programming language'
+                            }
+                        ]
+                    },
+                    {
+                        label: 'RESOURCES',
+                        children: [
+                            {
+                                label: 'API reference'
+                            },
+                            {
+                                label: 'DartPad'
+                            },
+                            {
+                                label: 'Pub packages'
+                            },
+                            {
+                                label: 'Dart news'
+                            },
+                            {
+                                label: 'Dart bugs and feature requests'
+                            }
+                        ]
+                    },
+                    {
+                        label: 'COMMUNITY',
+                        children: [
+                            {
+                                label: 'Support & mailing lists'
+                            },
+                            {
+                                label: 'Who uses Dart'
+                            },
+                            {
+                                label: 'Stack Overflow'
+                            },
+                            {
+                                label: 'G+ community & announcement group'
+                            },
+                            {
+                                label: 'Gitter chat rooms'
+                            },
+                        ]
+                    }
+                ]
+            },
+            '/zh/': {
                 selectText: '选择语言',
                 label: '简体中文',
                 editLinkText: '在 GitHub 上编辑此页',
@@ -29,12 +172,12 @@ module.exports = {
                 algolia: {},
                 // lastUpdated: '上次更新',
                 nav: [
-                    { text: '首页', link: '/' },
-                    { text: '指南', link: '/guide/' },
-                    { text: 'API', link: '/api/'}
+                    { text: '首页', link: '/zh/' },
+                    { text: '指南', link: '/zh/guide/' },
+                    { text: 'API', link: '/zh/api/'}
                 ],
                 sidebar: {
-                    '/guide/': [
+                    '/zh/guide/': [
                         {
                             title: '学习指南',
                             collapsable: false,
@@ -45,7 +188,7 @@ module.exports = {
                             ]
                         }
                     ],
-                    '/api/': [
+                    '/zh/api/': [
                         {
                             title: 'CORE',
                             collapsable: false,

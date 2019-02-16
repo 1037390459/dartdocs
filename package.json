@@ -10,5 +10,8 @@
   "dependencies": {
     "markdown-it-include": "^1.0.0",
     "markdown-it-mark": "^2.0.0"
+  },
+  "devDependencies": {
+    "@vuepress/plugin-back-to-top": "^1.0.0-alpha.0"
   }
 }
