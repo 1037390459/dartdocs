@@ -1,56 +1,36 @@
-# Tools
+# 选择开发工具
 
-When you’re ready to create an app, get the SDK and tools for your app type.
+Dart 支持以下IDE：
 
-App type|Get started instructions|Tool information
---|--|--
-Mobile|[Install Flutter](https://flutter.io/)|[Flutter tools](https://flutter.io/docs/development/tools/android-studio)
-Web|[Install the Dart SDK](/zh/guide/install)| Dart tools for the web
-Script or server|[Install the Dart SDK](/zh/guide/install)| Tools for server-side development
+1. [Android Studio](http://www.android-studio.org/) flutter 开发推荐使用
+2. [Visual Studio code](https://code.visualstudio.com/) web或服务器开发推荐使用
+3. [Webstorm](http://www.jetbrains.com/webstorm/) web或服务器开发推荐使用
 
-
-Dart plugins exist for these commonly used IDEs.
-
-1. [Android Studio](http://www.android-studio.org/) flutter
-2. [Visual Studio code](https://code.visualstudio.com/)
-3. [Webstorm](http://www.jetbrains.com/webstorm/)
+在web或服务器开发中 [Webstorm](http://www.jetbrains.com/webstorm/) 支持更全面一些。
 
 ## DartPad
 
-[DartPad](https://dartpad.dartlang.org/) is a great, no-download-required way to learn Dart syntax and to experiment with Dart language features. It supports Dart’s core libraries, except for VM libraries such as dart:io.
+[DartPad](https://dartpad.cn/) 无需下载，是一个在线学习Dart 语法和体验 Dart 语言功能的在线工具，它只支持 Dart 的核心库，但不能使用 VM 库，例如 dart:io。
+
+## vscode配置
+
+### 创建项目
+1. 在[Visual Studio code](https://code.visualstudio.com/)扩展中搜索 dart相关的插件，并且安装。使用ctrl + shift + x 可以打开扩展
+2. 直接安装点击链接[Visual Studio code for Dart](https://marketplace.visualstudio.com/items?itemName=Dart-Code.dart-code)，在打开的网页中，点击install 并安装依赖（建议使用chrome 浏览器打开）
 
 
-## vscode
+## Webstorm配置
 
-[Visual Studio code for Dart](https://marketplace.visualstudio.com/items?itemName=Dart-Code.dart-code)
-
-
-## Webstorm
-
-###  Create project
+###  创建项目
 ![img](./images/webstorm-create-project.jpg)
 
-### Set dart sdk
+### 设置dart sdk
 ![img](./images/webstorm-set-dart-sdk.jpg)
 
+1. 添加项目名称
+2. 设置dart sdk的path
+3. 选项开发模板
 
-## Tools in SDKs
-Most Dart-related SDKs include the following tools:
-
-### [Pub package manager (pub)](/guide/pub/)
-
-Manages Dart packages, making it easy for you to install, use, and share Dart libraries, command-line tools, and other assets. Some Dart technologies, such as Flutter, may not support all of the pub commands. IDEs that support Dart generally have special support for pub, but you can also use it from the command line.
-
-### Static analyzer (dartanalyzer)
-Evaluates and reports any errors or warnings in your code. The Dart plugin for your IDE should make use of Dart’s analysis engine, but you can also run the analyzer from the command line.
-### Code formatter (dartfmt)
-Formats your code, following the recommendations of the Dart Style Guide. IDEs that support Dart generally allow you to format the code within the IDE. Or you can run the formatter from the command line.
-
-## Tools in packages
-
-The following tools are distributed in packages on the Dart package site. To install them, use the pub command, as described in each tool’s installation instructions.
-
-### build_runner
-A code generator.
-### dartfix
-A tool for migrating Dart source code and fixing common issues.
+:::warning 注意
+Webstorm 必须添加dart sdk的安装目录，如果不添加就无法创建项目
+:::

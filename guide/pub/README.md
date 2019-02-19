@@ -1,45 +1,45 @@
-# Pub Package Manager
+# Pub 包管理器
 
-You can use the pub tool to manage Dart packages. Pub is one of the tools that you get when you install the Dart SDK.
+您可以使用pub工具来管理dart包。pub是安装dart SDK 后的内置命令行工具。类似于 [npm](https://www.npmjs.com/) 或[yarn](https://yarnpkg.com/)
 
-:::warning
-The Flutter SDK has its own commands for managing and updating packages. For more information, see [Using Packages](https://flutter.io/docs/development/packages-and-plugins/using-packages) on the [Flutter website](https://flutter.io/).
+:::warning 注意
+flutter SDK有自己的命令来管理和更新软件包。有关更多信息，请参阅[Flutter](https://flutter.io/docs/development/packages-and-plugins/using-packages)网站上的使用包。
 :::
 
-You can access the pub commands either through an IDE, such as WebStorm, or at the command line. Use whatever approach is most convenient.
+您可以通过IDE（例如WebStorm）或命令行访问pub命令。 使用最方便的方法。
 
-:::tip
-Problems? See [Troubleshooting Pub](./troubleshoot.md).
+:::tip 提示
+遇到问题？ 请参阅[故障排除](./troubleshoot.md)。
 :::
 
 
-## Managing packages
-Dart applications rely on packages. If your Dart app uses one or more library packages, then your app itself must be an application package.
-:::tip
-Pub used to support building apps through commands like pub build and pub serve. That functionality is now in other tools such as the build system. For details, see [Obsolete Pub Features](./obsolete.md).
+## 管理包
+
+Dart应用程序依赖于包。 如果您的Dart应用程序使用一个或多个库包，那么您的应用程序本身必须是应用程序包。
+:::tip 提示
+Pub用于通过pub build和pub serve等命令支持构建应用程序。 该功能现在在其他工具中，例如构建系统。 有关详细信息，请参阅[Obsolete Pub Features](./obsolete.md).
 :::
 
-### How to
+### 如何使用pub
 
-- [Getting Started with Pub](./get-started.md)
-- [Create Library Packages](./create-library-packages.md)
-- [Configuring Pub Environment Variables](./environment-variables.md)
-- [Publishing a Package](./publishing.md)
+- [Pub入门](./get-started.md)
+- [创建 Library Packages](./create-library-packages.md)
+- [配置Pub环境变量](./environment-variables.md)
 
-### Concepts
+### 概念
 
-- [Pub Dependencies](./dependencies.md)
-- [Pub Package Layout Conventions](./package-layout.md)
-- [Pub Versioning Philosophy](./versioning.md)
+- [Pub Dependencies（Pub依赖）](./dependencies.md)
+- [Pub Package Layout Conventions（Pub 包结构约定）](./package-layout.md)
+- [Pub Versioning Philosophy（Pub 包版本管理）](./versioning.md)
 
-### Reference
+### 参考
 
-- [Pubspec Format](./pubspec.md)
-- [Glossary](./glossary.md)
+- [Pubspec 格式](./pubspec.md)
+- [词汇表](./glossary.md)
 
-## Pub commands
+## Pub 命令
 
-The pub tool provides the following commands:
+pub工具提供以下命令：
 
 - [pub cache](./cmd/pub-cache.md)
 - [pub deps](./cmd/pub-deps.md)
@@ -51,8 +51,8 @@ The pub tool provides the following commands:
 - [pub upgrade](./cmd/pub-upgrade.md)
 - [pub uploader](./cmd/pub-uploader.md)
 
-For an overview of all the pub commands, see [Pub Commands].(./cmd/)。
+有关所有pub命令的概述，请参阅[Pub命令](./cmd/)。
 
-## Troubleshooting
+## 故障排除
 
-[Troubleshooting Pub ](./troubleshoot.md)gives solutions to problems that you might encounter when using pub.
+对pub进行[故障排除](./troubleshoot.md)可以解决使用pub时可能遇到的问题。

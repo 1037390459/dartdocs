@@ -1,36 +1,14 @@
 ---
 layout: Home
-actionText: Get started
+actionText: 起步
 actionLink: /guide/
 ---
+# 介绍
 
-## Dart helps you craft beautiful, high-quality experiences across all screens, with:
+本教程使用 [vuepress](https://vuepress.vuejs.org/) 构建, 本教程是中文的Dart 语言学习教程。如果发现文档中有问题，可以提交至GitHub更新。
 
-- A client-optimized language
-- Rich, powerful frameworks
-- Delightful, flexible tooling
+## 体验
 
-# Why Dart?
+<iframe style="border:none" width="100%" height="500" src="https://dartpad.cn"></iframe>
 
-Developers at Google and elsewhere use Dart to create high-quality, mission-critical apps for iOS, Android, and the web. With features aimed at client-side development, Dart is a great fit for both mobile and web apps.
-
-Dart is free and open source, developed on GitHub.
-
-## Productive
-
-Dart’s syntax is clear and concise, its tooling simple yet powerful. Sound typing helps you to identify subtle errors early. Dart has battle-hardened core libraries and an ecosystem of thousands of packages.
-
-## Fast
-
-Dart provides optimizing ahead-of-time compilation to get predictably high performance and fast startup across mobile devices and the web.
-
-## Portable
-
-Dart compiles to ARM and x86 code, so that Dart mobile apps can run natively on iOS, Android, and beyond. For web apps, Dart transpiles to JavaScript.
-
-## Approachable
-
-Dart is familiar to many existing developers, thanks to its unsurprising object orientation and syntax. If you already know C++, C#, or Java, you can be productive with Dart in just a few days.
-
-## Reactive
-Dart is well-suited to reactive programming, with support for managing short-lived objects—such as UI widgets—through Dart’s fast object allocation and generational garbage collector. Dart supports asynchronous programming through language features and APIs that use Future and Stream objects.
+## 快速起步

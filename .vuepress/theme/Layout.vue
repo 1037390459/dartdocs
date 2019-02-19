@@ -55,7 +55,7 @@
     <div class="page-footer">
         <div class="container page">
             <div class="item">
-                <img style="width:120px" src="http://www.dartdoc.cn/assets/shared/dart/logo+text/horizontal/mono-004b4974b3112e2d9136b1c457037dfd9fe54e2e69e850d777891e5c2a57a78d.svg" />
+                <img style="width:120px" src="/logo.svg" />
             </div>
             <div class="item"
                 v-for="(item, index) in footbarItems"
@@ -63,7 +63,8 @@
             >
                 <p class="label">{{item.label}}</p>
                 <p v-for="children in item.children">
-                    {{children.label}}
+                    <a v-if="children.link" :href="children.link">{{children.label}}<OutboundLink v-if="testUri(children.link)" /></a>
+                    <template v-else>{{children.label}}</template>
                 </p>
             </div>
         </div>
@@ -169,6 +170,9 @@ export default {
   },
 
   methods: {
+    testUri(uri) {
+        return /^http/.test(uri)
+    },
     toggleSidebar (to) {
       this.isSidebarOpen = typeof to === 'boolean' ? to : !this.isSidebarOpen
     },
@@ -205,7 +209,7 @@ export default {
 <style lang="stylus">
 @import './styles/config.styl'
 .page-footer
-    margin-top 2rem
+    margin-top 4rem
     padding 1.5rem 0 2rem 0
     height auto
     background-color #0175C2
@@ -221,6 +225,10 @@ export default {
             float left
             width 25%
             p
+                a
+                    .outbound
+                        color #fff
+                    color #fff
                 margin  0
                 &.label
                     margin 10px 0
