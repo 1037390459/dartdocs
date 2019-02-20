@@ -7,8 +7,7 @@ module.exports = [
                 link: 'https://flutter.io/'
             },
             {
-                label: 'Dart web 开发',
-                link: 'https://flutter.io/'
+                label: 'Dart web 开发'
             },
             {
                 label: 'Dart 服务器开发',
@@ -17,10 +16,12 @@ module.exports = [
                 label: 'Observatory 工具'
             },
             {
-                label: 'Dart 库'
+                label: 'Dart 库',
+                link: 'https://api.dart.ranyunlong.com'
             },
             {
-                label: 'Dart 编程语言'
+                label: 'Dart 编程语言',
+                link: '/'
             }
         ]
     },
@@ -32,10 +33,12 @@ module.exports = [
                 link: 'https://api.dart.ranyunlong.com'
             },
             {
-                label: 'DartPad'
+                label: 'DartPad',
+                link: 'https://dartpad.cn/'
             },
             {
-                label: 'Pub packages'
+                label: 'Pub packages',
+                link: 'https://pub.flutter-io.cn/'
             },
             {
                 label: 'Dart 新闻'

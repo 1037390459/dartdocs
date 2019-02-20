@@ -5,26 +5,21 @@
 学习更多 Dart 核心库, 参考 Dart 库概览. 想了解更多有关语言功能的详细信息, 参考 Dart 编程语言规范.
 
 :::tip 提示
-使用 DartPad 可以体验 Dart 的大部分语言功能 ([learn more](../dartpad.md)).
-[Open DartPad](https://dartpad.cn/)
+使用 DartPad 可以体验 [Dart](../dartpad.md) 的大部分语言功能。
+[打开 DartPad](https://dartpad.cn/)
 :::
 
-## 一个基础的Dart 项目
+## 一个基础的Dart程序
 
-以下代码使用了Dart的许多基本功能：
+以下代码使用了Dart的许多基本功能，
+点击![运行](/red-run.png)按钮运行该案例代码：
+<DartPad
+    id="d33791fc65ff2670f5ef6935fe33fb29"
+    vertical-ratio="60"
+    height="400"
+/>
 
-```dart
-// 定义一个函数.
-printInteger(int aNumber) {
-  print('The number is $aNumber.'); // 打印到控制台.
-}
 
-// 应用从这里开始执行。
-main() {
-  var number = 42; // 声明并初始化一个变量。
-  printInteger(number); // 调用函数。
-}
-```
 
 以下是此程序使用的代码，这些代码适用于所有（或几乎所有）的 Dart 应用：
 
@@ -40,14 +35,14 @@ main() {
 ==print()==
 控制台输出函数
 
-=='...'==（或=="..."==）
+=='...'==（或 =="..."== ）
 字符串常量。
 
 ==$variableName==（或）==${expression}==
-字符串插值：包括字符串文字内部的变量或表达式的字符串。有关更多信息，请参考 [Strings]()。
+字符串插值：包括字符串文字内部的变量或表达式的字符串。有关更多信息，请参考 [字符串](built-in-types.md#字符串)。
 
 ==main()==
-程序开始执行函数，该函数是特定的、必须的、顶级函数。 有关更多信息，请参考 [The main() function]()。
+程序开始执行函数，该函数是特定的、必须的、顶级函数。 有关更多信息，请参考 [main() 函数](built-in-types.md#main-函数)。
 
 ==var==
 定义变量，通过这种方式定义变量不需要指定变量类型。
@@ -58,13 +53,14 @@ main() {
 
 ## 重要的概念
 
+
 当您了解Dart语言时，请记住以下事实和概念：
 
-- 任何保存在变量中的都是一个 对象 ， 并且所有的对象都是对应一个 类 的实例。 无论是数字，函数和 ==null== 都是对象。所有对象继承自 [Object]() 类。
+- 任何保存在变量中的都是一个 对象 ， 并且所有的对象都是对应一个 类 的实例。 无论是数字，函数和 ==null== 都是对象。所有对象继承自 [Object](https://api.dart.ranyunlong.com/dart-core/Object-class.html) 类。
 
 - 尽管 Dart 是强类型的，但是 Dart 可以推断类型，所以类型注释是可选的。 在上面的代码中， number 被推断为 int 类型。 如果要明确说明不需要任何类型， [需要使用特殊类型 dynamic]() 。
 
-- Dart 支持泛型，如 List &lt;int&gt; （整数列表）或 List &lt;dynamic&gt; （任何类型的对象列表）。
+- Dart 支持泛型，如 List<Generic :value="[{link:'https://api.dart.ranyunlong.com/dart-core/int-class.html', value: 'int'}]"/> （整数列表）或 List<Generic :value="['dynamic']"/>（任何类型的对象列表）。
 
 - Dart 支持顶级函数（例如 ==main()== ）， 同样函数绑定在类或对象上（分别是 静态函数 和 实例函数 ）。 以及支持函数内创建函数 （ 嵌套 或 局部函数 ） 。
 

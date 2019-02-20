@@ -51,6 +51,7 @@ module.exports = {
                                 '/guide/handbook/',
                                 '/guide/handbook/variables',
                                 '/guide/handbook/operators',
+                                '/guide/handbook/control-flow-statements',
                                 '/guide/handbook/built-in-types'
                             ]
                         }

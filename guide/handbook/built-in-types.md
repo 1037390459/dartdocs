@@ -438,7 +438,7 @@ void enableFlags({bool bold = false, bool hidden = false}) {...}
 enableFlags(bold: true);
 ```
 :::tip 不推荐
-旧版本代码中可能使用的是冒号 (:) 而不是 = 来设置参数默认值。 原因是起初命名参数只支持 : 。 这种支持可能会被弃用。 建议 使用 = 指定默认值。
+旧版本代码中可能使用的是冒号 (`:`) 而不是 = 来设置参数默认值。 原因是起初命名参数只支持 : 。 这种支持可能会被弃用。 建议 使用 = 指定默认值。
 :::
 
 下面示例演示了如何为位置参数设置默认值：
@@ -542,15 +542,20 @@ list.forEach((item) {
 ```
 点击按钮 ![运行](/red-run.png)运行该案例代码：
 
-<iframe style="border:none" width="100%" height="300" src="https://dartpad.cn/embed-inline.html?id=5d70bc1889d055c7a18d35d77874af88&verticalRatio=60"></iframe>
+
+<DartPad
+    id="5d70bc1889d055c7a18d35d77874af88"
+    vertical-ratio="60"
+    height="300"
+/>
 
 如果函数只有一个语句，也可以用箭头函数来简化代码，将以下代码替换上面dartpad中的代码 看看代码运行结果是否相同：
-```dart
-void main() {
-  var list = ['apples', 'bananas', 'oranges'];
-  list.forEach((item) => print('${list.indexOf(item)}: $item'));
-}
-```
+<DartPad
+    id="80e3d93e85626f511900c3a49ffcc1ea"
+    vertical-ratio="60"
+    height="300"
+/>
+
 
 ### 函数作用域
 
@@ -558,100 +563,42 @@ Dart 使用词法作用域（也称为静态作用域），即变量的作用域
 
 作用域范围由变量所处代码块（大括号）的层级决定，层级越深，作用域越小，层级越浅，作用域越大。
 
-不被任何代码块包含的变量通常称为顶层变量，它们的作用域最大
+不被任何代码块包含的变量通常称为顶层变量，它们的作用域最大。
 
-```dart
-bool topLevel = true;
-
-void main() {
-  var insideMain = true;
-
-  void myFunction() {
-    var insideFunction = true;
-
-    void nestedFunction() {
-      var insideNestedFunction = true;
-
-      assert(topLevel);
-      assert(insideMain);
-      assert(insideFunction);
-      assert(insideNestedFunction);
-    }
-  }
-}
-```
+<DartPad
+    id="1ebe714df6366bde5a23fa673dc1f750"
+    vertical-ratio="70"
+    height="650"
+/>
 
 ### 闭包
 
 闭包（closure）是指一个函数对象，即使不在初始作用域内，也仍然能够访问其中的变量。
 
-```dart
-/// Returns a function that adds [addBy] to the
-/// function's argument.
-Function makeAdder(num addBy) {
-  return (num i) => addBy + i;
-}
-
-void main() {
-  // Create a function that adds 2.
-  var add2 = makeAdder(2);
-
-  // Create a function that adds 4.
-  var add4 = makeAdder(4);
-
-  assert(add2(3) == 5);
-  assert(add4(3) == 7);
-}
-```
+<DartPad
+    id="0598a70d7fe40e8ad9817488cae993e4"
+    vertical-ratio="70"
+    height="550"
+/>
 
 ### 检测函数是否相等
 
 以下是测试顶级函数，静态方法和实例方法是否相等的例子：
+<DartPad
+    id="3d5f185191619211f694ec90ada4df36"
+    vertical-ratio="80"
+    height="900"
+/>
 
-```dart
-void foo() {} // 顶层函数
-
-class A {
-  static void bar() {} // 静态方法
-  void baz() {} // 实例方法
-}
-
-void main() {
-  var x;
-
-  // 比较顶层函数
-  x = foo;
-  assert(foo == x);
-
-  // 比较静态函数
-  x = A.bar;
-  assert(A.bar == x);
-
-  // 比较实例函数.
-  var v = A(); // Instance #1 of A
-  var w = A(); // Instance #2 of A
-  var y = w;
-  x = w.baz;
-
-  // 这些闭包引用相同的实例
-  // 所以它们是相同的.
-  assert(y.baz == x);
-
-  // 这些闭包是指不同的实例,
-  // 所以它们是不相等的.
-  assert(v.baz != w.baz);
-}
-```
 
 ### 返回值
 
 所有函数都返回一个值。如果未指定返回值，则将语句 ==return null;== 隐式附加到函数体。
 也就是说，如果函数不添加返回值。 则默认返回null;
 
-```dart
-foo() {}
+<DartPad
+    id="8f453a38fbe93869c90178f8e542e9b4"
+    vertical-ratio="60"
+    height="300"
+/>
 
-assert(foo() == null);
-```
-
-## 运算符

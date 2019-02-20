@@ -10,17 +10,17 @@
 --|--|--
 移动端|[安装 Flutter](https://flutter.io/)|[Flutter 工具](https://flutter.io/docs/development/tools/android-studio)
 Web|[安装 Dart SDK](./install)| Dart Web 端工具
-脚本或服务器|[安装 Dart SDK](./install)| 服务端开发工具
+脚本或服务器|[安装 Dart SDK](./)| 服务端开发工具
 
-- [Windows安装步骤](./install.html#windows安装步骤)
-- [Linux安装步骤](./install.html#linux安装步骤)
-- [Mac安装步骤](./install.html#mac安装步骤)
+- [Windows安装步骤](./#windows安装步骤)
+- [Linux安装步骤](./#linux安装步骤)
+- [Mac安装步骤](./#mac安装步骤)
 
 ## Windows安装步骤
 
 选择以下选项之一进行安装：
-- [使用Chocolatey](./install.html#使用chocolatey安装)
-- [使用windows安装包](./install.html#使用windows安装包)
+- [使用Chocolatey](./#使用chocolatey安装)
+- [使用windows安装包](./#使用windows安装包)
 
 ### 使用Chocolatey安装
 
@@ -66,8 +66,8 @@ Dart_x64.stable.setup.exe| 64位稳定版本
 
 如果您在AMD64（64-bit Intel）上使用Debian / Ubuntu，则可以选择以下选项之一，这两个选项都可以在发布新版本时自动更新SDK。
 
-- [使用apt-get](./install.html#使用-apt-get)
-- [使用Debian package](./install.html#安装debian软件包)
+- [使用apt-get](./#使用-apt-get)
+- [使用Debian package](./#安装debian软件包)
 
 ### 使用 apt-get
 
