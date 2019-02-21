@@ -28,7 +28,7 @@ module.exports = {
                     }
                 },
                 algolia: {},
-                lastUpdated: '上次更新',
+                // lastUpdated: '上次更新',
                 nav: [
                     { text: '首页', link: '/' },
                     { text: '指南', link: '/guide/' },
@@ -52,7 +52,10 @@ module.exports = {
                                 '/guide/handbook/variables',
                                 '/guide/handbook/operators',
                                 '/guide/handbook/control-flow-statements',
-                                '/guide/handbook/built-in-types'
+                                '/guide/handbook/built-in-types',
+                                '/guide/handbook/functions',
+                                '/guide/handbook/exceptions',
+                                '/guide/handbook/classes'
                             ]
                         }
                     ]
