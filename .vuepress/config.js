@@ -1,7 +1,20 @@
 const footbar = require('./footbar')
 module.exports = {
     head: [
-        ['link', { rel: 'icon', sizes:'64x64', href: '/logo64.png' }]
+        ['link', { rel: 'icon', sizes:'64x64', href: '/logo64.png' }],
+        ['script', { type: 'text/javascript', src: 'http://tajs.qq.com/stats?sId=66180126', charset: 'UTF-8' }],
+        ['script', { type: 'text/javascript' }, `(function(){
+            var bp = document.createElement('script');
+            var curProtocol = window.location.protocol.split(':')[0];
+            if (curProtocol === 'https') {
+                bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+            }
+            else {
+                bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+            }
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(bp, s);
+        })();`]
     ],
     locales: {
         '/': {
@@ -10,6 +23,7 @@ module.exports = {
             description: 'Dart 中文学习网站.'
         },
     },
+    serviceWorker: false,
     themeConfig: {
         repo: 'ranyunlong/dartdocs',
         docsBranch: 'master',
@@ -28,11 +42,18 @@ module.exports = {
                     }
                 },
                 algolia: {},
-                // lastUpdated: '上次更新',
+                lastUpdated: '上次更新',
                 nav: [
                     { text: '首页', link: '/' },
                     { text: '指南', link: '/guide/' },
-                    { text: 'API', link: 'https://api.dart.ranyunlong.com'}
+                    { text: '其他资源', items: [
+                        {
+                            text: 'Api 参考', link: 'https://api.dart.ranyunlong.com'
+                        },
+                        {
+                            text: 'DartPad', link: 'https://dartpad.ranyunlong.com'
+                        }
+                    ]}
                 ],
                 sidebar: {
                     '/guide/': [

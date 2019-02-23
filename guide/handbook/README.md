@@ -6,7 +6,7 @@
 
 :::tip 提示
 使用 DartPad 可以体验 [Dart](../dartpad.md) 的大部分语言功能。
-[打开 DartPad](https://dartpad.cn/)
+[打开 DartPad](https://dartpad.ranyunlong.com/)
 :::
 
 ## 一个基础的Dart程序

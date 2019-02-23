@@ -3,8 +3,7 @@ module.exports = [
         label: '技术',
         children: [
             {
-                label: 'Dart 移动开发 (Flutter)',
-                link: 'https://flutter.io/'
+                label: 'Dart 移动开发 (Flutter)'
             },
             {
                 label: 'Dart web 开发'
@@ -20,8 +19,7 @@ module.exports = [
                 link: 'https://api.dart.ranyunlong.com'
             },
             {
-                label: 'Dart 编程语言',
-                link: '/'
+                label: 'Dart 编程语言'
             }
         ]
     },
@@ -34,11 +32,10 @@ module.exports = [
             },
             {
                 label: 'DartPad',
-                link: 'https://dartpad.cn/'
+                link: 'https://dartpad.ranyunlong.com/'
             },
             {
-                label: 'Pub packages',
-                link: 'https://pub.flutter-io.cn/'
+                label: 'Pub packages'
             },
             {
                 label: 'Dart 新闻'
