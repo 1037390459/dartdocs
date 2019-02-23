@@ -10,7 +10,7 @@ Dart 支持以下IDE：
 
 ## DartPad
 
-[DartPad](https://dartpad.cn/) 无需下载，是一个在线学习Dart 语法和体验 Dart 语言功能的在线工具，它只支持 Dart 的核心库，但不能使用 VM 库，例如 dart:io。
+[DartPad](https://dartpad.ranyunlong.com/) 无需下载，是一个在线学习Dart 语法和体验 Dart 语言功能的在线工具，它只支持 Dart 的核心库，但不能使用 VM 库，例如 dart:io。
 
 ### 使用DartPad 编写 hellow world
 

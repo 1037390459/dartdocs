@@ -56,6 +56,9 @@
         <div class="container page">
             <div class="item">
                 <img style="width:120px" src="/logo.svg" />
+                <p>
+                    <a target="repo" href="http://www.miitbeian.gov.cn">渝ICP备18011900号-1</a>
+                </p>
             </div>
             <div class="item"
                 v-for="(item, index) in footbarItems"

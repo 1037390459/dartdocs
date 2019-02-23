@@ -42,7 +42,7 @@ module.exports = {
                     }
                 },
                 algolia: {},
-                lastUpdated: '上次更新',
+                // lastUpdated: '上次更新',
                 nav: [
                     { text: '首页', link: '/' },
                     { text: '指南', link: '/guide/' },

@@ -1,13 +1,13 @@
 # DartPad
 
-[DartPad(dartpad.cn)](https://dartpad.cn/) 是一个开源工具，可让您在任何现代浏览器中使用Dart语言。 这是DartPad的样子：
+[DartPad(dartpad.cn)](https://dartpad.ranyunlong.com/) 是一个开源工具，可让您在任何现代浏览器中使用Dart语言。 这是DartPad的样子：
 
-![DartPad](./images/dartpad-hello-fffafbc5af52bd8cc22aeec07c4342e5c6a929b2c8ece1998e9d0e30f408b573.png)
+![DartPad](../images/dartpad-hello-fffafbc5af52bd8cc22aeec07c4342e5c6a929b2c8ece1998e9d0e30f408b573.png)
 
 
 ## 类库支持
 
-DartPad支持 dart：* 与Web应用程序一起使用的库; 它不支持 [dart:io]() 或[packages](https://pub.flutter-io.cn)中的库。 如果您想使用[dart:io]()，请改用[Dart SDK](./#安装sdk)。如果要使用程序包，请获取该程序包[支持的平台](./platforms.md)的SDK 。
+DartPad支持 dart：* 与Web应用程序一起使用的库; 它不支持 [dart:io]() 或[packages](https://pub.flutter-io.cn)中的库。 如果您想使用[dart:io]()，请改用[Dart SDK](../#安装sdk)。如果要使用程序包，请获取该程序包[支持的平台](../platforms.md)的SDK 。
 
 
 ## 入门
@@ -17,7 +17,7 @@ DartPad支持 dart：* 与Web应用程序一起使用的库; 它不支持 [dart:
 
 ### 打开DartPad，然后运行一些示例
 
-1. 打开DartPad(dartpad.cn)](https://dartpad.cn/)。
+1. 打开DartPad(dartpad.ranyunlong.com)](https://dartpad.ranyunlong.com/)。
 
 左侧显示一个样本，右侧显示输出。如果您之前使用过DartPad，则可以单击“New Pad”以返回原始样本。
 
@@ -66,3 +66,9 @@ for (var char in 'hello'.split('')) {
 ## 检查Dart版本信息
 
 DartPad支持的语言功能和API取决于DartPad所基于的 ==Dart SDK== 版本。您可以在DartPad的右下角找到SDK版本。
+
+## 隐私声明
+
+DartPad是一项免费的开源服务，可帮助开发人员了解Dart语言和库。输入DartPad的源代码可能会被发送到运行在Google Cloud Platform中的服务器，以便进行错误/警告分析，编译为JavaScript，然后返回到浏览器。
+
+输入DartPad的源代码可以存储，处理和聚合，以改善DartPad和其他Dart工具的用户体验。例如，我们可能会使用源代码来帮助提供更好的代码完成建议。原始源代码在不超过60天后删除。

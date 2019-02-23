@@ -5,7 +5,7 @@
 学习更多 Dart 核心库, 参考 Dart 库概览. 想了解更多有关语言功能的详细信息, 参考 Dart 编程语言规范.
 
 :::tip 提示
-使用 DartPad 可以体验 [Dart](../dartpad.md) 的大部分语言功能。
+使用 DartPad 可以体验 [Dart](../dartpad/) 的大部分语言功能。
 [打开 DartPad](https://dartpad.ranyunlong.com/)
 :::
 
