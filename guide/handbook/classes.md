@@ -398,7 +398,7 @@ void main() {
 
 实例方法， getter， 和 setter 方法可以是抽象的， 只定义接口不进行实现，而是留给其他类去实现。 抽象方法只存在于 抽象类 中。
 
-定义一个抽象函数，使用分号 (;) 来代替函数体：
+定义一个抽象函数，使用分号 (`;`) 来代替函数体：
 
 ```dart
 abstract class Doer {
@@ -547,4 +547,42 @@ void main() {
 }
 ```
 
-如果要重写 `==` 操作符，需要重写对象的 ==hashCode getter== 方法。 重写 `==` 和 ==hashCode== 的实例，参考 
+如果要重写 `==` 操作符，需要重写对象的 ==hashCode getter== 方法。
+
+在 Dart 中每个对象会默认提供一个整数的哈希值， 因此在 map 中可以作为 key 来使用， 重写 hashCode 的 getter 方法来生成自定义哈希值。 如果重写 hashCode 的 getter 方法，那么可能还需要重写 `==` 运算符。 相等的（通过 `==` ）对象必须拥有相同的 hashCode。 hashCode 并不要求是唯一的， 但是应该具有良好的分布形态。
+
+```dart
+class Person {
+  final String firstName, lastName;
+
+  Person(this.firstName, this.lastName);
+
+  // 重写 hashCode，实现策略源于  Effective Java，
+  // 第11章。
+  @override
+  int get hashCode {
+    int result = 17;
+    result = 37 * result + firstName.hashCode;
+    result = 37 * result + lastName.hashCode;
+    return result;
+  }
+
+  // 如果重写了 hashCode，通常应该从新实现 == 操作符。
+  @override
+  bool operator ==(dynamic other) {
+    if (other is! Person) return false;
+    Person person = other;
+    return (person.firstName == firstName &&
+        person.lastName == lastName);
+  }
+}
+
+void main() {
+  var p1 = Person('Bob', 'Smith');
+  var p2 = Person('Bob', 'Smith');
+  var p3 = 'not a person';
+  assert(p1.hashCode == p2.hashCode);
+  assert(p1 == p2);
+  assert(p1 != p3);
+}
+```

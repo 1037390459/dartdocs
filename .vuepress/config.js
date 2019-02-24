@@ -2,7 +2,15 @@ const footbar = require('./footbar')
 module.exports = {
     head: [
         ['link', { rel: 'icon', sizes:'64x64', href: '/logo64.png' }],
-        ['script', { type: 'text/javascript', src: 'http://tajs.qq.com/stats?sId=66180126', charset: 'UTF-8' }],
+        ['script', { type: 'text/javascript'}, `
+        var _hmt = _hmt || [];
+        (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?bc706e06ea39e403e506a6ed6531d329";
+        var s = document.getElementsByTagName("script")[0]; 
+        s.parentNode.insertBefore(hm, s);
+        })();
+        `],
         ['script', { type: 'text/javascript' }, `(function(){
             var bp = document.createElement('script');
             var curProtocol = window.location.protocol.split(':')[0];
@@ -77,6 +85,14 @@ module.exports = {
                                 '/guide/handbook/functions',
                                 '/guide/handbook/exceptions',
                                 '/guide/handbook/classes'
+                            ]
+                        },
+                        {
+                            title: 'Dart 库指南',
+                            collapsable: false,
+                            children: [
+                                '/guide/libraries/',
+                                '/guide/libraries/dart_core'
                             ]
                         }
                     ]
