@@ -333,7 +333,7 @@ assert(intersection.contains('xenon'));
 
 ### Map
 
-map 是一个无序的 key-value （键值对）集合，就是大家熟知的 dictionary 或者 hash。 map 将 kay 与 value 关联，以便于检索。和 JavaScript 不同，Dart 对象不是 map 。
+map 是一个无序的 key-value （键值对）集合，就是大家熟知的 dictionary 或者 hash。 map 将 key 与 value 关联，以便于检索。和 JavaScript 不同，Dart 对象不是 map 。
 
 声明 map 可以使用简洁的字面量语法，也可以使用传统构造函数：
 
